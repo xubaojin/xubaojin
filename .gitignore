@@ -1,0 +1,77 @@
+# ====================
+# WorkBuddy 工作目录
+# ====================
+.workbuddy/
+
+# ====================
+# 操作系统文件
+# ====================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+
+# ====================
+# 编辑器 / IDE
+# ====================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-workspace
+*.sublime-project
+.project
+.classpath
+.settings/
+
+# ====================
+# 日志 & 临时文件
+# ====================
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.tmp
+*.temp
+
+# ====================
+# 依赖目录（如有本地工具链）
+# ====================
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# ====================
+# 构建输出（本项目为纯静态，一般无此需要，保险起见）
+# ====================
+dist/
+build/
+
+# ====================
+# 环境变量 & 密钥
+# ====================
+.env
+.env.*
+!.env.example
+*.pem
+*.key
