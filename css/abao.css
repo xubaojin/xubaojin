@@ -903,6 +903,19 @@ section:hover {
     text-align: center;
 }
 
+.contact-qr-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.contact-qr-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .contact-qr {
     max-width: 240px;
     border-radius: 12px;
