@@ -38,7 +38,7 @@ html {
 }
 
 body {
-    font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif;
     background: var(--bg);
     background-image: radial-gradient(ellipse at 20% 50%, rgba(46, 117, 182, 0.02) 0%, transparent 50%),
                       radial-gradient(ellipse at 80% 50%, rgba(0, 184, 148, 0.02) 0%, transparent 50%);
@@ -234,17 +234,17 @@ body {
 
 /* Sections */
 section {
-    background: var(--bg);
+    background: var(--bg-card);
     border-radius: 12px;
     padding: 32px;
     margin-bottom: 20px;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+    box-shadow: var(--shadow-card);
     border: 1px solid var(--border-light);
     scroll-margin-top: 64px;
 }
 
 section:hover {
-    box-shadow: var(--shadow-card);
+    box-shadow: var(--shadow-hover);
 }
 
 .section-title {
@@ -348,7 +348,7 @@ section:hover {
     text-align: center;
     gap: 12px;
     padding: 24px 20px;
-    background: var(--bg-card);
+    background: var(--primary-subtle);
     border-radius: 10px;
     border: 1px solid var(--border);
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
@@ -409,7 +409,7 @@ section:hover {
     text-align: center;
     gap: 12px;
     padding: 24px 20px;
-    background: var(--bg-card);
+    background: var(--primary-subtle);
     border-radius: 10px;
     border: 1px solid var(--border);
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
@@ -463,7 +463,6 @@ section:hover {
     background: var(--primary-subtle);
     border-radius: 10px;
     border: 1px solid var(--border);
-    border-top: 4px solid var(--primary);
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
     transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 }
@@ -487,14 +486,14 @@ section:hover {
 }
 
 .advantage-content h3 {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     margin-bottom: 6px;
     color: var(--primary-dark);
 }
 
 .advantage-content p {
     color: var(--text-light);
-    font-size: 0.95rem;
+    font-size: 0.9rem;
 }
 
 /* Skills - 单行列表式 */
