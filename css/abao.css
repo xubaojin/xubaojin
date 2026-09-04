@@ -933,6 +933,8 @@ section:hover {
     margin-top: 16px;
     color: var(--text-light);
     font-size: 0.95rem;
+    max-width: 240px;
+    text-align: center;
 }
 
 /* 底部工作经历精简版 — 视觉降级 */
