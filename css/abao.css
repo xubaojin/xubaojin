@@ -991,14 +991,16 @@ section:hover {
     }
 
     /* 移动端单列：二维码需相对整张卡片居中。
-       内容区因左侧图标偏右(40+14)/2=27px，故网格左移全量(54px)、右移 0，
-       使网格起点=卡片左边、终点=卡片右边，中心落在卡片中心 */
+       内容区因左侧图标+gap 偏右(40+14)/2=27px，
+       用 transform 平移整张网格 -27px，让网格中心对齐卡片中心。
+       transform 不影响布局流，规避微信浏览器对负 margin 的渲染异常 */
     .contact-qr-grid {
         grid-template-columns: 1fr;
         gap: 20px;
-        margin-left: calc(-1 * (40px + 14px));
+        margin-left: 0;
         margin-right: 0;
         max-width: none;
+        transform: translateX(calc(-1 * (40px + 14px) / 2));
     }
 
     /* 移动端二维码小一点 */
