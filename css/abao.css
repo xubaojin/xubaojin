@@ -990,12 +990,14 @@ section:hover {
         margin-bottom: 12px;
     }
 
-    /* 移动端图标缩小到 40px，二维码改单列堆叠，居中补偿值同步更新 */
+    /* 移动端单列：二维码需相对整张卡片居中。
+       内容区因左侧图标偏右(40+14)/2=27px，故网格左移全量(54px)、右移 0，
+       使网格起点=卡片左边、终点=卡片右边，中心落在卡片中心 */
     .contact-qr-grid {
         grid-template-columns: 1fr;
         gap: 20px;
-        margin-left: calc(-1 * (40px + 14px) / 2);
-        margin-right: calc(-1 * (40px + 14px) / 2);
+        margin-left: calc(-1 * (40px + 14px));
+        margin-right: 0;
         max-width: none;
     }
 
